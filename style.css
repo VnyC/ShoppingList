@@ -1,23 +1,55 @@
-.coolTitle {
+html, body{
+  height: 100%;
   text-align: center;
-  font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 40px;
-  transform: skewY(-10deg);
-  letter-spacing: 4px;
-  word-spacing: -8px;
-  color: tomato;
-  text-shadow: 
-    -1px -1px 0 firebrick,
-    -2px -2px 0 firebrick,
-    -3px -3px 0 firebrick,
-    -4px -4px 0 firebrick,
-    -5px -5px 0 firebrick,
-    -6px -6px 0 firebrick,
-    -7px -7px 0 firebrick,
-    -8px -8px 0 firebrick,
-    -30px 20px 40px dimgrey;
+  color: white;
 }
 
-.done {
+body {
+  background:  black/*radial-gradient(600px at 50% 50% , #fff 10%, #000 150%)*/;
+ }
+
+
+ #listHead{
+  margin:4px;
+ }
+
+ #ol{
+  text-align: left;
+    margin:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    position: fixed;
+    bottom: 10%;
+    top:20%;
+    overflow-y: auto;
+    
+}
+ }
+
+li{
+  font-size: 1.15em;
+  margin: 10px;
+}
+
+#newItem{
+  outline: none;
+}
+
+
+.done{
   text-decoration: line-through;
+  color: grey;
+  font-size: 1em;
+
+}
+
+#newButton{
+  margin-left: 10px;
+}
+
+#newL{
+  position: fixed;
+  bottom: 5%;
 }
